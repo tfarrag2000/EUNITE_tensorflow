@@ -86,5 +86,4 @@ result.values
 MAPE= np.mean(abs(res[:,0]-res[:,1])/res[:,0])*100
 print({'MAPE =':MAPE})
 print("--- %s seconds ---" % (time.time() - start_time))
-
  
