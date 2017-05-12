@@ -47,7 +47,7 @@ writer = pd.ExcelWriter('D:\\output.xlsx')
 newDataFrame.to_excel(writer,'Sheet1')
 #~~~~~~~~~~~~~~~~~~~~~~~ tensorFlow ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-FEATURES=columnsNames[1:10]
+FEATURES=columnsNames[1:9]
 LABEL="Y"
 
 regressor = lr.DNNRegressor(
