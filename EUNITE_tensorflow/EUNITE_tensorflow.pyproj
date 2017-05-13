@@ -24,6 +24,12 @@
   <ItemGroup>
     <Compile Include="EUNITE_tensorflow.py" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="The Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="The Data\The Data.xlsx" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
