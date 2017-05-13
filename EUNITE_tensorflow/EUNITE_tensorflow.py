@@ -11,7 +11,7 @@ import itertools
 
 start_time = time.time()
 
-xls_file = pd.ExcelFile(r'C:\Users\T\OneDrive\My Research\Tamer_Ehab_STLF\Programs For Local Machine\The Datasets\data from httpneuron.tuke.skcompetition\competition-data\The Data.xlsx')
+xls_file = pd.ExcelFile(r'.\the Data\The Data.xlsx')
 df = xls_file.parse('mainData')
 #~~~~~~~~~~~~~~ Normalization from (-1 to 1) ~~~~~~~~~~~~
 OldData=df.loc[df['Month'].isin([1,2,3,4,5,6,7,8,9,10,11,12])].values[:,[4,5]];
@@ -43,7 +43,7 @@ newDataFrame=pd.DataFrame(newData,columns =columnsNames);
 
 Train = newDataFrame[0:T-31-2].drop('id',1)
 Test=newDataFrame[T-31-1:T].drop('id',1)
-writer = pd.ExcelWriter('D:\\output.xlsx')
+writer = pd.ExcelWriter(r'.\The Data\output.xlsx')
 newDataFrame.to_excel(writer,'Sheet1')
 #~~~~~~~~~~~~~~~~~~~~~~~ tensorFlow ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
